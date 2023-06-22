@@ -1,0 +1,12 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - 'app'
+  - '--image'
+  - 'gcr.io/tecnicaneuralworks/app'
+  - '--region'
+  - 'us-central1'
+  - '--platform'
+  - 'managed'
